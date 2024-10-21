@@ -1,0 +1,130 @@
+std.top_level:
+  title: Study Elements
+  description: Manage Study Elements
+  route_name: rep.home
+  menu_name: main
+  weight: 30
+  #requirements:
+    #_permission: 'access content'
+    
+std.search_option:
+  title: Search Study Elements
+  description: Search Study Elements
+  route_name: std.search
+  parent: std.top_level
+  menu_name: main
+  enabled: 1
+  weight: 1
+  #requirements:
+   #_permission: 'access content'
+   
+std.divider1:
+  title: '_________________________________'
+  parent: std.top_level
+  menu_name: main
+  weight: 9
+#  class: 'menu-divider'
+#  options:
+#    attributes:
+#      class:
+#        - 'menu-divider'
+  route_name: '<none>'
+  requirements:
+   _permission: 'access content'
+
+#std.manage_da_files:
+#  title: Manage DA Files
+#  description: Manage DA Files
+#  route_name: rep.select_mt_element
+#  route_parameters:
+#    elementtype: 'da'
+#    mode: 'card'
+#    page: '1'
+#    pagesize: '10'
+#    studyuri: 'none'
+#  parent: std.top_level
+#  menu_name: main
+#  weight: 11
+#  requirements:
+#    _permission: 'access content'
+#    _role: 'authenticated'
+
+std.manage_dsg_template:
+  title: Manage DSG Templates
+  description: Manage DSG Templates
+  route_name: rep.select_mt_element
+  route_parameters:
+    elementtype: 'dsg'
+    mode: 'table'
+    page: '1'
+    pagesize: '10'
+    studyuri: 'none'
+  parent: std.top_level
+  menu_name: main
+  weight: 12
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+std.manage_dd_template:
+  title: Manage DD Templates
+  description: Manage DD Templates
+  route_name: rep.select_mt_element
+  route_parameters:
+    elementtype: 'dd'
+    mode: 'table'
+    page: '1'
+    pagesize: '10'
+    studyuri: 'none'
+  parent: std.top_level
+  menu_name: main
+  weight: 13
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+std.manage_sdd_template:
+  title: Manage SDD Templates
+  description: Manage SDD Templates
+  route_name: rep.select_mt_element
+  route_parameters:
+    elementtype: 'sdd'
+    mode: 'table'
+    page: '1'
+    pagesize: '10'
+    studyuri: 'none'
+  parent: std.top_level
+  menu_name: main
+  weight: 14
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
+
+std.divider2:
+  title: '_________________________________'
+  parent: std.top_level
+  menu_name: main
+  weight: 20
+#  class: 'menu-divider'
+#  options:
+#    attributes:
+#      class:
+#        - 'menu-divider'
+  route_name: '<none>'
+  requirements:
+   _permission: 'access content'
+
+std.manage_studies:
+  title: Manage Studies
+  description: Manage Studies
+  route_name: std.select_study
+  route_parameters:
+    elementtype: 'study'
+    page: '1'
+    pagesize: '10'
+  parent: std.top_level
+  menu_name: main
+  weight: 21
+  requirements:
+    _permission: 'access content'
+    _role: 'authenticated'
